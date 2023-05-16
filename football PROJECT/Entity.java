@@ -9,39 +9,14 @@ import java.util.ArrayList;
  */
 public abstract class Entity extends SmoothMover
 {
-    protected int health;
-    protected int atk;
     protected int speed;
-    protected int reloadTime;
-    protected int type; // 1=water,2=fire,3=electric -> can only defeat enemies of your own kind
-    protected int reloadDelayCount;
-    
-    protected int getHealth(){return health;}
-    protected int getAtk(){return atk;}
-    //protected int getSpeed(){return speed;}
-    protected int getReloadTime(){return reloadTime;}
-    protected int getType(){return type;}
-    
-    protected void setHealth(int newHealth){health = newHealth;}
-    protected void setAtk(int newHealth){health = newHealth;}
-    protected void setSpeed(int newSpeed){health = newSpeed;}
-    protected void setReloadTime(int newReloadTime){reloadTime = newReloadTime;}
+    protected int stoppingPower;
 
-    public Entity(int type, int health, int atk, int speed, int r) 
+    public Entity(int speed, int stoppingPower) 
     {
-        this.type=type;
-        this.health=health;
-        this.atk=atk;
         this.speed=speed;
-        this.reloadTime =r;
-    }
-    public void attack(Entity e){
-        if(e.getType()==type){
-            e.setHealth(e.getHealth()-getAtk());
-        }
-    }
-    public abstract void fire();
-    public abstract void isDead();
+        this.stoppingPower=stoppingPower;
+    }    
     public void move(){
         move(speed);
     }
