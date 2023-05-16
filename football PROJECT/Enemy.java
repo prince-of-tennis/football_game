@@ -7,10 +7,10 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Enemy extends Entity
+public class Defender extends Entity
 {
-    public Enemy(int type,int health, int atk, int speed, int reloadSpeed){
-        super(type,health, atk, speed, reloadSpeed);
+    public Defender(){
+        
         setImage("enemy.png");
     }
     
