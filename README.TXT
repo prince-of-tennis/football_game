@@ -1,3 +1,3 @@
 a football game written for our APCSA final project
 
-most of the code written by Reagan Hsu and Alex Lee
+code written by Reagan H., Alex L., Taiyu C., Mark Q.
