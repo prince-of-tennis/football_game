@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=FootballPlayer
+comment1.params=number\ playerSpeed\ isActive
+comment1.target=FootballPlayer(int,\ int,\ boolean)
+comment10.params=
+comment10.target=int\ getActivePlayer()
+comment11.params=
+comment11.target=void\ setActive()
+comment2.params=
+comment2.target=int\ getNumber()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=boolean\ isActive()
+comment5.params=
+comment5.target=void\ checkCollisionWithDefense()
+comment6.params=
+comment6.target=void\ checkKeyPress()
+comment7.params=
+comment7.target=void\ goRight()
+comment8.params=
+comment8.target=void\ handleMovement()
+comment9.params=pnum
+comment9.target=void\ switchToPlayer(int)
+numComments=12
